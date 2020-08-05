@@ -1,6 +1,8 @@
 # news_finder
 Python3 rss news crawler
 
+Change the config section in the main.py to setup your own directory or the code will fail  
+
 News Crawler
 
 This library can collect live stream feed rss from a given url/s source. 
@@ -10,7 +12,7 @@ The csv file will be stored in a directory choose by the user and the name of th
 
 Feed
 
-A feed is usually a xml file structure or similar and contain a list of all recent feed. It depends from the source how many feed you will get on each request
+A feed is usually a xml file structure or similar and contain a list of all recent news published. It depends from the source how many news you will get on each request
 
 Etag
 
