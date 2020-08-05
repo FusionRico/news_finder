@@ -16,7 +16,7 @@ A feed is usually a xml file structure or similar and contain a list of all rece
 
 Etag
 
-The etag act as unique feed identifier, to not overload the source with requests we only get the feed if the has changed and update the etag records of the source with the news tag released. When we add the etag in the request the server will automatically return the feed if is present otherwise it will return a debug error, this won’t stop the code but the source will be skipped.
+The etag act as unique feed identifier, to not overload the source with requests we only get the feed if the has changed and update the etag records of the source with the new tag released. When we add the etag in the request the server will automatically return the feed if is present otherwise it will return a debug error, this won’t stop the code but the source will be skipped.
 
 Not all the website has an etag system in place therefore special care need to be taken when changing the frequency of the whole process to not overwhelming the source server.
 
