@@ -162,8 +162,8 @@ while True :
     df['id_news']= [ Hash_news(str(url),str(title),str(text)) for url,title,text in zip(df['url_news'],df['title'],df['text'])]
     df['crawling_date_feed']= [ now for x in df['id_news']]
     
-    
-    path_file= path_directory_output+'news_raw_output_'+str(now).replace(':','')+'.csv'
+    file_name=str(now).replace(':','').replace('-','').replace(' ','-').split('.')[0]
+    path_file= path_directory_output+'news_raw_output_'+file_name+'.csv'
     df.to_csv(path_file,index=False)
    
     print(df.head(5))
