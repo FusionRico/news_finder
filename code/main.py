@@ -123,10 +123,11 @@ while True :
     published=[]
     web_site=[]    
     crw_news=[]
+    
     for url,tag in my_d.items():
 
-        
-        print('\n',url,'\n')
+        count_parsed=1        
+        print('\n\n',url,'\n')
         #print(tag)
         feed_news=feed_request(url,tag)
         feed=feed_news[2]
@@ -135,12 +136,12 @@ while True :
 
         if check == 0 :
 
-            print('No Updated')
+            print('No Update')
             
         else:
             for url_news in zip(check['url_news'],check['published'],check['web_site']): 
 
-                print("\r PARSING: {}".format(url_news[0]),end="")
+                print("\r TOTAL EXTRACTED URL: {}".format(str(count_parsed)),end="")
                 art=parser_article(url_news[0])
                 text.append(art[0])
                 title.append(art[1])
@@ -148,8 +149,8 @@ while True :
                 link_news.append(url_news[0])
                 web_site.append(url_news[2])
                 crw_news.append(datetime.now())
-
-    
+                count_parsed+=1
+              
     df=pd.DataFrame.from_dict({'crw_news_date':crw_news,
                             'published':published,
                              'title':title,
