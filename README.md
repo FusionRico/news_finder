@@ -1,7 +1,7 @@
 # news_finder
 Python3 rss news crawler
 
-Change the config section in the main.py to setup your own directory or the code will fail  
+To run the code change the config section in the /code/main.py to setup your own directory then run the main.py file  
 
 News Crawler
 
