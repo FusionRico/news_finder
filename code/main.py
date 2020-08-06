@@ -12,7 +12,7 @@ import hashlib
 minutes_pause= 180 # CHANGE HERE 
 pause_value= 60*minutes_pause
 path_csv_input= '/home/user/news_finder/input/source_feed_input.csv' # CHANGE HERE path where the csv input file is stored
-path_directory_output= '/home/user/news-finder/output/' # CHANGE HERE path where you want to store the csv file
+path_directory_output= '/home/user/news_finder/output/' # CHANGE HERE path where you want to store the csv file
 ##################
 
 
