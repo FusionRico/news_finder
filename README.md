@@ -5,7 +5,7 @@ Change the config section in the main.py to setup your own directory or the code
 
 News Crawler
 
-This library can collect live stream feed rss from a given url/s source. 
+This library can collect live stream rss source from a given url/s source. 
 It will collect the most recent news feed published from the sources with the use of ‘feedparser’ and ‘newspaper’.
 We will manage the data with ‘pandas’ and store the output in a csv file ready for further investigation. 
 The csv file will be stored in a directory choose by the user and the name of the file will contain the date and the time when the csv was dumped.
@@ -42,7 +42,7 @@ Process
 3-	load etag for each data source in the input csv file 
 4-	request the news with newspaper and parsing
 5-	data export
-6-	repeat the process number 1 but we add the etag in the request
+6-	repeat the process from point 1 but we add the etag in the request
 
 Duplicates
 
@@ -53,3 +53,6 @@ Lib (Python 3)
 pip install pandas 
 pip install feedparser
 pip install newspaper3k
+hashlib
+time 
+datetime
